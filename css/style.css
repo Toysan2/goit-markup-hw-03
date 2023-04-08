@@ -18,6 +18,15 @@
 .background-grey {
     background-color: var(--background-color4);
 }
+.logo-blue {
+    font-family: 'Raleway';
+    color: var(--text-color4);
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
 .logo-white {
     color: var(--text-color3);
 }
@@ -58,7 +67,6 @@
     font-size: 16px;
     line-height: 1.62;
     font-weight: 500;
-    padding: 6px 22px;
 }
 .button:hover,
 .button-hero {
@@ -103,13 +111,11 @@
     font-size: 18px;
     line-height: 2;
     font-weight: 700;
-    padding: 20px 24px 4px 24px;
 }
 .product-description {
     color: var(--text-color2);
     font-size: 16px;
     line-height: 1.875;
-    padding: 0px 24px 20px 24px;
 }
 .employ-name {
     color: var(--text-color1);
@@ -139,93 +145,152 @@
 .active-page {
     color: var(--text-color4);
 }
+/*zad 3 */
+ul {
+    list-style-type: none;
+}
+/*.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}*/
+
+/*headder*/
 .headder-container {
     display: flex;
-    height: 80px;
-    margin: 0 auto;
-    justify-content: center;
-    border-bottom: 1px solid #eeeeee;
-}
-.footer-container {
-    display: flex;
-    height: 80px;
-    margin: 0 auto;
-    /* width: 1200px;*/
-    justify-content: center;
-}
-.button-container {
-    justify-content: center;
-    display: flex;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 94px;
-    gap: 8px;
+    padding: 0 15px;
+    border-bottom: 1px solid #ececec;
 }
-.flex-row {
-    justify-content: center;
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 30px;
-    flex-wrap: wrap;
+.logo-container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-right: 93px;
 }
-.product-box {
-    width: 370px;
-    border: 1px solid #eeeeee;
-    margin: 0 auto;
-}
-.nav-bar {
-    margin: 0 auto;
+.ul-nav {
     display: inline-block;
-    padding: 0 auto;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.contact-container {
+    margin: 0 auto;
+    padding-left: 335px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 0;
+}
+
+ul#nav li {
+    display: inline;
     padding-right: 46px;
 }
-.contanct-container-head {
-    justify-content: center;
-    margin: 0 auto;
-    display: inline-block;
-    padding-top: 28px;
-    padding-left: 364px;
-}
+/*main portfoli.html*/
 .section {
-    display: flex;
     padding-bottom: 94px;
 }
-.last {
-    margin-bottom: 79px;
-}
-.ul-head {
-    justify-content: center;
+
+.button-container {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+}
+.ul-button {
     display: inline-block;
-    padding-top: 28px;
+    padding-top: 94px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    gap: 8px;
 }
-.ul-foot {
+ul#menu li {
+    display: inline;
+}
+.product-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+ul#product li {
+    display: inline;
+    border: 1px solid #eeeeee;
+}
+.ul-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/*footer*/
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 60px;
+}
+.address-container {
+    padding-top: 20px;
+    padding-bottom: 9px;
+}
+.footer-email-contiainer {
+    padding-bottom: 9px;
+}
+.footer-phone-container {
+    padding-bottom: 60px;
+}
+/*main - hero - index.html*/
+.hero-container {
+    text-align: center;
+    padding-top: 200px;
+}
+/*main - button - hero - index.html*/
+.button-hero-container {
+    display: flex;
     justify-content: center;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    list-style-type: none;
-    padding-top: 28px;
 }
-.logo-blue-head {
-    font-family: 'Raleway';
-    color: var(--text-color4);
-    text-decoration: none;
-    font-size: 26px;
-    line-height: 1.19;
-    font-weight: 700;
+/* Lorem ipsum*/
+.article-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    letter-spacing: 0.03em;
-    padding-right: 93px;
-    padding-top: 24px;
 }
-.logo-blue-foot {
-    font-family: 'Raleway';
-    color: var(--text-color4);
-    text-decoration: none;
-    font-size: 26px;
-    line-height: 1.19;
-    font-weight: 700;
-    padding-left: -1200px;
-    letter-spacing: 0.03em;
+ul#article li {
+    display: inline;
+    justify-content: center;
+}
+.ul-article {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+/* paragraf - index.html*/
+.paragraf-container {
+    text-align: center;
+}
+/* nasz zespół */
+.employ-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+ul#employ li {
+    display: inline;
+    justify-content: center;
+    border: 1px solid #eeeeee;
+}
+.ul-employ {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 30px;
 }
