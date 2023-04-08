@@ -5,6 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Zadanie domowe - portfolio</title>
+        <link rel="stylesheet" href="css/modern-normalize.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -14,34 +15,39 @@
         <link rel="stylesheet" href="css/style.css" />
         <style>
             body {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
                 font-family: 'Roboto', sans-serif;
                 color: #212121;
             }
         </style>
     </head>
     <body>
-        <header>
-            <a class="logo-blue" href="./index.html"
+        <header class="headder-container">
+            <a class="logo-blue-head" href="./index.html"
                 >Web<span class="logo-black">Studio</span></a
             >
             <nav>
-                <ul>
-                    <li>
+                <ul class="ul-head">
+                    <li class="nav-bar">
                         <a class="link head-foot-font" href="./index.html"
                             >Agencja</a
                         >
                     </li>
-                    <li>
+                    <li class="nav-bar">
                         <a
                             class="link head-foot-font active-page"
                             href="./portfolio.html"
                             >Portfolio</a
                         >
                     </li>
-                    <li><a class="link head-foot-font" href="#">Kontakt</a></li>
+                    <li class="nav-bar">
+                        <a class="link head-foot-font" href="#">Kontakt</a>
+                    </li>
                 </ul>
             </nav>
-            <div>
+            <div class="contanct-container-head">
                 <a class="head-foot-font" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                 >
@@ -52,29 +58,27 @@
         </header>
         <main class="backgroud-white">
             <!-- Buttony -->
-            <div>
-                <ul>
-                    <li>
-                        <button class="button" type="button">Wszystkie</button>
-                    </li>
-                    <li>
-                        <button class="button" type="button">Strony</button>
-                    </li>
-                    <li>
-                        <button class="button" type="button">Aplikacje</button>
-                    </li>
-                    <li>
-                        <button class="button" type="button">Dizajn</button>
-                    </li>
-                    <li>
-                        <button class="button" type="button">Marketing</button>
-                    </li>
-                </ul>
+            <div class="button-container">
+                <div>
+                    <button class="button" type="button">Wszystkie</button>
+                </div>
+                <div>
+                    <button class="button" type="button">Strony</button>
+                </div>
+                <div>
+                    <button class="button" type="button">Aplikacje</button>
+                </div>
+                <div>
+                    <button class="button" type="button">Dizajn</button>
+                </div>
+                <div>
+                    <button class="button" type="button">Marketing</button>
+                </div>
             </div>
             <!-- Główna treść strony-->
-            <section>
-                <ul>
-                    <li>
+            <section class="section">
+                <div class="flex-row">
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img.jpg"
                             alt="Zdjęcia 3 pracowników"
@@ -87,8 +91,8 @@
                                 Strona internetowa
                             </p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img-1.jpg"
                             alt="Koszykarzy walczących o piłkę"
@@ -101,8 +105,8 @@
                             </h3>
                             <p class="product-description">Dizajn</p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img-2.jpg"
                             alt="Logo restauracji The Seafood"
@@ -113,8 +117,8 @@
                             <h3 class="product-name">Restauracja Seafood</h3>
                             <p class="product-description">Aplikacja</p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img-3.jpg"
                             alt="Czarne słuchawki"
@@ -125,8 +129,8 @@
                             <h3 class="product-name">Projekt Prime</h3>
                             <p class="product-description">Marketing</p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img-4.jpg"
                             alt="Dwa pudełka"
@@ -137,8 +141,8 @@
                             <h3 class="product-name">Projekt Boxes</h3>
                             <p class="product-description">Aplikacja</p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img-5.jpg"
                             alt="Strona analizjąca mapę świata"
@@ -153,8 +157,8 @@
                                 Strona internetowa
                             </p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img-6.jpg"
                             alt="Zdjęcie magazynu Limited Edition"
@@ -167,8 +171,8 @@
                             </h3>
                             <p class="product-description">Dizajn</p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img-7.jpg"
                             alt="Plakietka z napisem LABEL TAG"
@@ -179,8 +183,8 @@
                             <h3 class="product-name">Projekt LAB</h3>
                             <p class="product-description">Marketing</p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="product-box">
                         <img
                             src="images/portfolio/img-8.jpg"
                             alt="Zdjęcie laptopa wyświetlającego stronę Growing Business"
@@ -191,27 +195,35 @@
                             <h3 class="product-name">Growing Business</h3>
                             <p class="product-description">Aplikacja</p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer class="backgroud-black">
-            <a class="logo-blue" href="./index.html"
+        <footer class="footer-container backgroud-black">
+            <a class="logo-blue-foot" href="./index.html"
                 >Web<span class="logo-white">Studio</span></a
             >
             <address class="head-foot-font">
-                <a
-                    class="address"
-                    href="https://goo.gl/maps/V1taE6vsMn2LFqJW6"
-                    target="_blank"
-                    >m. Warszawa, Aleje Jerozolimskie 21</a
-                >
-                <a class="head-foot-font" href="mailto:info@example.com"
-                    >info@example.com</a
-                >
-                <a class="head-foot-font" href="tel:48111111111"
-                    >+48 111 111 111</a
-                >
+                <ul class="ul-foot">
+                    <li>
+                        <a
+                            class="address"
+                            href="https://goo.gl/maps/V1taE6vsMn2LFqJW6"
+                            target="_blank"
+                            >m. Warszawa, Aleje Jerozolimskie 21</a
+                        >
+                    </li>
+                    <li>
+                        <a class="head-foot-font" href="mailto:info@example.com"
+                            >info@example.com</a
+                        >
+                    </li>
+                    <li>
+                        <a class="head-foot-font" href="tel:48111111111"
+                            >+48 111 111 111</a
+                        >
+                    </li>
+                </ul>
             </address>
         </footer>
     </body>
