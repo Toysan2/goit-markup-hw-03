@@ -50,6 +50,8 @@
     letter-spacing: 0.03em;
 }
 .button-hero {
+    border: none;
+    border-radius: 4px;
     font-family: 'Roboto';
     cursor: pointer;
     font-weight: 700;
@@ -61,6 +63,8 @@
     letter-spacing: 0.06em;
 }
 .button {
+    border: none;
+    border-radius: 4px;
     font-family: 'Roboto';
     background-color: var(--background-color4);
     cursor: pointer;
@@ -107,15 +111,23 @@
     letter-spacing: 0.03em;
 }
 .product-name {
+    margin: 0;
     color: var(--text-color1);
     font-size: 18px;
     line-height: 2;
     font-weight: 700;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 4px;
 }
 .product-description {
+    margin: 0;
     color: var(--text-color2);
     font-size: 16px;
     line-height: 1.875;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-bottom: 20px;
 }
 .employ-name {
     color: var(--text-color1);
@@ -130,16 +142,20 @@
 }
 .hero {
     color: var(--text-color3);
+    background-color: var(--background-color3);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.3636;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 200;
 }
 .separator-font {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1, 17;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 }
 .active-page {
@@ -149,54 +165,44 @@
 ul {
     list-style-type: none;
 }
-/*.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}*/
 
 /*headder*/
 .headder-container {
+    justify-content: center;
     display: flex;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding: 24px 0 25px;
     border-bottom: 1px solid #ececec;
-}
-.logo-container {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    padding-right: 93px;
+    height: 80px;
 }
 .ul-nav {
     display: inline-block;
     margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.contact-container {
-    margin: 0 auto;
-    padding-left: 335px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 0;
+    padding-left: 93px;
 }
 
 ul#nav li {
     display: inline;
     padding-right: 46px;
 }
+.ul-contact {
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 364px;
+}
+
+ul#contact li {
+    display: inline;
+    padding-right: 50px;
+}
+
 /*main portfoli.html*/
 .section {
-    padding-bottom: 94px;
+    padding-bottom: 94px 0;
 }
 
 .button-container {
     text-align: center;
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
 }
 .ul-button {
@@ -210,30 +216,34 @@ ul#menu li {
     display: inline;
 }
 .product-container {
-    max-width: 1200px;
-    width: 100%;
+    max-width: 1210px;
     margin: 0 auto;
 }
 ul#product li {
+    width: 370px;
     display: inline;
     border: 1px solid #eeeeee;
 }
 .ul-product {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 /*footer*/
 .footer-container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
     padding-top: 60px;
+    height: 260px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
 }
 .address-container {
+    display: flex;
+    flex-direction: column;
     padding-top: 20px;
-    padding-bottom: 9px;
+    gap: 9px;
 }
 .footer-email-contiainer {
     padding-bottom: 9px;
@@ -242,9 +252,11 @@ ul#product li {
     padding-bottom: 60px;
 }
 /*main - hero - index.html*/
-.hero-container {
-    text-align: center;
+.hero-slogan {
     padding-top: 200px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 /*main - button - hero - index.html*/
 .button-hero-container {
@@ -287,6 +299,7 @@ ul#employ li {
     display: inline;
     justify-content: center;
     border: 1px solid #eeeeee;
+    background-color: var(--text-color3);
 }
 .ul-employ {
     justify-content: center;
