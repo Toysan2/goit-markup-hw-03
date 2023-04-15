@@ -13,73 +13,52 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/style.css" />
-        <style>
-            body {
-                font-family: 'Roboto', sans-serif;
-            }
-        </style>
     </head>
     <body>
-        <header>
-            <div class="headder-container">
-                <div>
-                    <a class="logo-blue" href="./index.html"
+        <header class="header">
+            <div class="container header-wrapper">
+                <nav class="header-nav">
+                    <a class="logo" href="./index.html"
                         >Web<span class="logo-black">Studio</span></a
                     >
-                </div>
-                <div>
-                    <nav>
-                        <ul class="ul-nav" id="nav">
-                            <li>
-                                <a
-                                    class="link head-foot-font active-page"
-                                    href="./index.html"
-                                    >Agencja</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="link head-foot-font"
-                                    href="./portfolio.html"
-                                    >Portfolio</a
-                                >
-                            </li>
-                            <li>
-                                <a class="link head-foot-font" href="#"
-                                    >Kontakt</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div>
-                    <ul class="ul-contact" id="contact">
+                    <ul class="header-menu">
                         <li>
-                            <a
-                                class="head-foot-font"
-                                href="mailto:info@devstudio.com"
-                                >info@devstudio.com</a
+                            <a class="header-font" href="./index.html"
+                                >Agencja</a
                             >
                         </li>
                         <li>
-                            <a class="head-foot-font" href="tel:48111111111"
-                                >+48 111 111 111</a
+                            <a class="header-font" href="./portfolio.html"
+                                >Portfolio</a
                             >
+                        </li>
+                        <li>
+                            <a class="header-font" href="#">Kontakt</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
+                <ul class="header-contacts">
+                    <li>
+                        <a class="contact-font" href="mailto:info@devstudio.com"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li>
+                        <a class="contact-font" href="tel:48111111111"
+                            >+48 111 111 111</a
+                        >
+                    </li>
+                </ul>
             </div>
         </header>
         <main>
             <!-- HERO -->
             <section class="section hero">
-                <div class="hero-container">
+                <div class="container">
                     <h1 class="hero-slogan">
                         EFEKTYWNE ROZWIĄZANIA<br />
                         DLA WASZEGO BIZNESU
                     </h1>
-                </div>
-                <div class="button-hero-container">
                     <button class="button-hero" type="button">
                         Zamów usługę
                     </button>
@@ -87,8 +66,8 @@
             </section>
             <!-- Czym się zajmujemy-->
             <section class="section">
-                <div class="article-container">
-                    <ul class="ul-article" id="article">
+                <div class="container">
+                    <ul class="ul-article">
                         <li>
                             <h3 class="article-headline">LOREM IPSUM</h3>
                             <p class="article-text">
@@ -123,13 +102,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <!-- Czym się zajmujemy -->
-            <section class="section">
-                <div class="paragraf-container">
-                    <h2 class="separator-font">Czym się zajmujemy</h2>
-                </div>
-                <div class="paragraf-container">
+                <!-- Czym się zajmujemy -->
+                <div class="container">
+                    <h2 class="about-us-font">Czym się zajmujemy</h2>
                     <ul class="ul-article" id="article">
                         <li>
                             <img
@@ -160,11 +135,11 @@
             </section>
             <!-- Nasz zespół -->
             <section class="section background-grey">
-                <div class="article-container">
-                    <h2 class="separator-font">Nasz zespół</h2>
+                <div class="container">
+                    <h2 class="team-font">Nasz zespół</h2>
                 </div>
-                <div class="employ-container">
-                    <ul class="ul-employ" id="employ">
+                <div class="container">
+                    <ul class="ul-team" id="team">
                         <li>
                             <img
                                 src="images/team/team-img-4.jpg"
@@ -173,8 +148,8 @@
                                 height="260"
                             />
                             <div>
-                                <h3 class="employ-name">John Doe</h3>
-                                <p class="employ-description">
+                                <h3 class="employee-name">John Doe</h3>
+                                <p class="employee-description">
                                     Product Designer
                                 </p>
                             </div>
@@ -187,8 +162,8 @@
                                 height="260"
                             />
                             <div>
-                                <h3 class="employ-name">John Doe</h3>
-                                <p class="employ-description">
+                                <h3 class="employee-name">John Doe</h3>
+                                <p class="employee-description">
                                     Frontend Developer
                                 </p>
                             </div>
@@ -201,8 +176,8 @@
                                 height="260"
                             />
                             <div>
-                                <h3 class="employ-name">John Doe</h3>
-                                <p class="employ-description">Marketing</p>
+                                <h3 class="employee-name">John Doe</h3>
+                                <p class="employee-description">Marketing</p>
                             </div>
                         </li>
                         <li>
@@ -213,30 +188,30 @@
                                 height="260"
                             />
                             <div>
-                                <h3 class="employ-name">John Doe</h3>
-                                <p class="employ-description">UI Designer</p>
+                                <h3 class="employee-name">John Doe</h3>
+                                <p class="employee-description">UI Designer</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
-        <footer class="backgroud-black">
-            <div class="footer-container">
-                <a class="logo-blue" href="./index.html"
+        <footer class="footer">
+            <div class="container">
+                <a class="logo" href="./index.html"
                     >Web<span class="logo-white">Studio</span></a
                 >
-                <address class="address-container head-foot-font">
+                <address class="footer-font footer-wrapper">
                     <a
                         class="address"
                         href="https://goo.gl/maps/V1taE6vsMn2LFqJW6"
                         target="_blank"
                         >m. Warszawa, Aleje Jerozolimskie 21</a
                     >
-                    <a class="head-foot-font" href="mailto:info@example.com"
+                    <a class="footer-font" href="mailto:info@example.com"
                         >info@example.com</a
                     >
-                    <a class="head-foot-font" href="tel:48111111111"
+                    <a class="footer-font" href="tel:48111111111"
                         >+48 111 111 111</a
                     >
                 </address>

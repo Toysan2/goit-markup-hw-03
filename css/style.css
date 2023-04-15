@@ -1,26 +1,91 @@
+/*Globals - klasy stosowane globalnie*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-font);
+}
 :root {
-    --text-color1: #212121;
-    --text-color2: #757575;
-    --text-color3: #ffffff;
-    --text-color4: #2196f3;
-    --text-color5: rgba(255, 255, 255, 0.6);
-    --background-color1: #e5e5e5;
-    --background-color2: #2196f3;
-    --background-color3: #2f303a;
-    --background-color4: #f5f4fa;
+    --dark-font: #212121;
+    --grey-font: #757575;
+    --white-font: #ffffff;
+    --ash-font: rgba(255, 255, 255, 0.6);
+    --only-blue: #2196f3;
+    --dark-background: #2f303a;
+    --grey-background: #f5f4fa;
+}
+ul {
+    list-style-type: none;
+}
+.section {
+    padding: 94px 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .backgroud-black {
-    background-color: var(--background-color3);
-}
-.background-white {
-    background-color: var(--background-color1);
+    background-color: var(--dark-background);
 }
 .background-grey {
-    background-color: var(--background-color4);
+    background-color: var(--grey-background);
 }
-.logo-blue {
+/*header*/
+.header {
+    padding: 24px 0 25px;
+    border-bottom: 1px solid #ececec;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+}
+.header-menu {
+    display: flex;
+    gap: 46px;
+}
+.header-contacts {
+    display: flex;
+    gap: 50px;
+}
+.header-font {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--dark-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contact-font {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--grey-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contact-font:hover,
+.header-font:hover {
+    color: var(--only-blue);
+}
+.contact-font:focus,
+.header-font:focus {
+    color: var(--only-blue);
+}
+.logo {
     font-family: 'Raleway';
-    color: var(--text-color4);
+    color: var(--only-blue);
     text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
@@ -28,26 +93,28 @@
     letter-spacing: 0.03em;
 }
 .logo-white {
-    color: var(--text-color3);
+    color: var(--white-font);
 }
 .logo-black {
-    color: var(--text-color1);
+    color: var(--dark-font);
 }
-.head-foot-font {
-    font-style: normal;
-    text-decoration: none;
-    color: var(--text-color2);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+/* HERO */
+.hero {
+    color: var(--white-font);
+    background-color: var(--dark-background);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
-.address {
-    color: var(--text-color3);
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+.hero-slogan {
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 .button-hero {
     border: none;
@@ -57,45 +124,20 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    padding: 10px 42px;
 }
-.button {
-    border: none;
-    border-radius: 4px;
-    font-family: 'Roboto';
-    background-color: var(--background-color4);
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 1.62;
-    font-weight: 500;
+/* LOREM IPSUM - index.html*/
+.ul-article {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
 }
-.button:hover,
-.button-hero {
-    background-color: var(--background-color2);
-    color: var(--text-color3);
-}
-.button:focus,
-.button-hero {
-    background-color: var(--background-color2);
-    color: var(--text-color3);
-}
-
-.link {
-    color: var(--text-color1);
-    text-decoration: none;
-}
-.link:hover,
-.head-foot-font:hover {
-    color: var(--text-color4);
-}
-.link:focus,
-.head-foot-font:focus {
-    color: var(--text-color4);
-}
-
 .article-headline {
     color: var(--text-color1);
     font-weight: 700;
@@ -110,9 +152,126 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+/* Czym się zajmujemy */
+.about-us-font {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+/* Nasz zespół */
+.team-font {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.ul-team {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+}
+ul#team li {
+    display: inline;
+    justify-content: center;
+    border: 1px solid #eeeeee;
+    background-color: var(--white-font);
+}
+.employee-name {
+    color: var(--dark-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.employee-description {
+    color: var(--grey-font);
+    font-size: 16px;
+    line-height: 1.1875;
+    padding-bottom: 30px;
+}
+/* Footer */
+.footer {
+    padding: 60px 0;
+    background-color: var(--dark-background);
+}
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 20px;
+}
+.footer-font {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--ash-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.address {
+    color: var(--white-font);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer-font:hover,
+.address:hover {
+    color: var(--only-blue);
+}
+.footer-font:focus,
+.address:focus {
+    color: var(--only-blue);
+}
+/* main - filters - portfolio.html */
+.button {
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    background-color: var(--grey-background);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.62;
+    font-weight: 500;
+    padding: 6px 22px;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    gap: 8px;
+}
+.button:hover,
+.button-hero {
+    background-color: var(--only-blue);
+    color: var(--white-font);
+}
+.button:focus,
+.button-hero {
+    background-color: var(--only-blue);
+    color: var(--white-font);
+}
+/* main - products = portfolio.html */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 .product-name {
     margin: 0;
-    color: var(--text-color1);
+    color: var(--dark-background);
     font-size: 18px;
     line-height: 2;
     font-weight: 700;
@@ -122,188 +281,10 @@
 }
 .product-description {
     margin: 0;
-    color: var(--text-color2);
+    color: var(--grey-font);
     font-size: 16px;
     line-height: 1.875;
     padding-top: 4px;
     padding-left: 24px;
     padding-bottom: 20px;
-}
-.employ-name {
-    color: var(--text-color1);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.1875;
-}
-.employ-description {
-    color: var(--text-color2);
-    font-size: 16px;
-    line-height: 1.1875;
-}
-.hero {
-    color: var(--text-color3);
-    background-color: var(--background-color3);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3636;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    height: 600px;
-    margin: 0 auto;
-    padding-top: 200;
-}
-.separator-font {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-}
-.active-page {
-    color: var(--text-color4);
-}
-/*zad 3 */
-ul {
-    list-style-type: none;
-}
-
-/*headder*/
-.headder-container {
-    justify-content: center;
-    display: flex;
-    padding: 24px 0 25px;
-    border-bottom: 1px solid #ececec;
-    height: 80px;
-}
-.ul-nav {
-    display: inline-block;
-    margin: 0 auto;
-    padding-left: 93px;
-}
-
-ul#nav li {
-    display: inline;
-    padding-right: 46px;
-}
-.ul-contact {
-    display: inline-block;
-    margin: 0 auto;
-    padding-left: 364px;
-}
-
-ul#contact li {
-    display: inline;
-    padding-right: 50px;
-}
-
-/*main portfoli.html*/
-.section {
-    padding-bottom: 94px 0;
-}
-
-.button-container {
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.ul-button {
-    display: inline-block;
-    padding-top: 94px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    gap: 8px;
-}
-ul#menu li {
-    display: inline;
-}
-.product-container {
-    max-width: 1210px;
-    margin: 0 auto;
-}
-ul#product li {
-    width: 370px;
-    display: inline;
-    border: 1px solid #eeeeee;
-}
-.ul-product {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-/*footer*/
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-    height: 260px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-}
-.address-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    gap: 9px;
-}
-.footer-email-contiainer {
-    padding-bottom: 9px;
-}
-.footer-phone-container {
-    padding-bottom: 60px;
-}
-/*main - hero - index.html*/
-.hero-slogan {
-    padding-top: 200px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-    text-align: center;
-}
-/*main - button - hero - index.html*/
-.button-hero-container {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-/* Lorem ipsum*/
-.article-container {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-ul#article li {
-    display: inline;
-    justify-content: center;
-}
-.ul-article {
-    justify-content: center;
-    display: flex;
-    gap: 30px;
-}
-/* paragraf - index.html*/
-.paragraf-container {
-    text-align: center;
-}
-/* nasz zespół */
-.employ-container {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-ul#employ li {
-    display: inline;
-    justify-content: center;
-    border: 1px solid #eeeeee;
-    background-color: var(--text-color3);
-}
-.ul-employ {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    gap: 30px;
 }
