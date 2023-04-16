@@ -102,19 +102,18 @@ ul {
 .hero {
     color: var(--white-font);
     background-color: var(--dark-background);
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+.hero-slogan {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-.hero-slogan {
-    padding-bottom: 30px;
-    margin: 0 auto;
-    text-align: center;
 }
 .button-hero {
     border: none;
@@ -122,15 +121,11 @@ ul {
     font-family: 'Roboto';
     cursor: pointer;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+    line-height: 1.875;
     text-align: center;
     letter-spacing: 0.06em;
     padding: 10px 42px;
+    margin: 0 auto;
 }
 /* LOREM IPSUM - index.html*/
 .ul-article {
@@ -226,12 +221,10 @@ ul#team li {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.footer-font:hover,
-.address:hover {
+.footer-font:hover {
     color: var(--only-blue);
 }
-.footer-font:focus,
-.address:focus {
+.footer-font:focus {
     color: var(--only-blue);
 }
 /* main - filters - portfolio.html */
